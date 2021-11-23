@@ -15,4 +15,10 @@ class Service extends Model
     {
         return $this->hasMany(ServicePackage::class);
     }
+
+
+    public function create_service_package($service_package)
+    {
+        return $this->service_packages()->create($service_package);
+    }
 }

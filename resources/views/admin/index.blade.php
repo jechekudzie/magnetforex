@@ -9,8 +9,8 @@
                         <h3>General</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item">Widgetsz</li>
-                            <li class="breadcrumb-item active">General</li>
+                            <li class="breadcrumb-item">admin</li>
+                            <li class="breadcrumb-item active">dashboard</li>
                         </ol>
                     </div>
                     <div class="col-sm-6">
@@ -27,14 +27,12 @@
         <div class="container-fluid general-widget">
             <div class="row">
                 <div class="col-sm-6 col-xl-4 col-lg-6">
-                    <a href="{{url('/admin/professions')}}">
+                    <a href="{{url('/admin/services')}}">
                         <div class="card o-hidden border-0">
                             <div class="bg-secondary b-r-4 card-body">
                                 <div class="media static-top-widget">
                                     <div class="align-self-center text-center"><i class="fa fa-product-hunt"></i></div>
-                                    <div class="media-body"><span class="m-0">Professions</span>
-                                        <h4 class="mb-0 counter">6659</h4>
-                                        <i class="icon-bg"></i>
+                                    <div class="media-body"><span class="m-0">Services</span>
                                     </div>
                                 </div>
                             </div>
@@ -42,15 +40,43 @@
                     </a>
                 </div>
                 <div class="col-sm-6 col-xl-4 col-lg-6">
-                    <a href="{{url('/admin/professional_qualifications')}}">
+                    <a href="{{url('/admin/items')}}">
                         <div class="card o-hidden border-0">
                             <div class="bg-secondary b-r-4 card-body">
                                 <div class="media static-top-widget">
                                     <div class="align-self-center text-center"><i class="fa
                                     fa-certificate"></i></div>
-                                    <div class="media-body"><span class="m-0">Professional Qualifications</span>
-                                        <h4 class="mb-0 counter">6659</h4>
-                                        <i class="icon-bg fa-certificate"></i>
+                                    <div class="media-body"><span class="m-0">Packages Line Items</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-xl-4 col-lg-6">
+                    <a href="{{url('/admin/subscriptions')}}">
+                        <div class="card o-hidden border-0">
+                            <div class="bg-secondary b-r-4 card-body">
+                                <div class="media static-top-widget">
+                                    <div class="align-self-center text-center"><i class="fa
+                                    fa-certificate"></i></div>
+                                    <div class="media-body"><span class="m-0">Subscriptions</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-xl-4 col-lg-6">
+                    <a href="{{url('/admin/payments')}}">
+                        <div class="card o-hidden border-0">
+                            <div class="bg-secondary b-r-4 card-body">
+                                <div class="media static-top-widget">
+                                    <div class="align-self-center text-center"><i class="fa
+                                    fa-certificate"></i></div>
+                                    <div class="media-body"><span class="m-0">Payments</span>
 
                                     </div>
                                 </div>

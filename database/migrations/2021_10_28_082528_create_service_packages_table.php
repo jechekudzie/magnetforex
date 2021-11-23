@@ -20,6 +20,7 @@ class CreateServicePackagesTable extends Migration
             $table->double('price',8,2);
             $table->boolean('on_promotion')->default(0);
             $table->double('on_promotion_price',8,2)->nullable();
+            $table->string('duration')->nullable();
             $table->timestamps();
         });
     }

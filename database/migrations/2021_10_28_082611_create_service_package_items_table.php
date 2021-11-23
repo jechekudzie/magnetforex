@@ -17,7 +17,8 @@ class CreateServicePackageItemsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('service_package_id');
             $table->unsignedBigInteger('item_id');
-            $table->double('allocation',8);
+            $table->double('allocation',8)->nullable();
+
             $table->timestamps();
         });
     }

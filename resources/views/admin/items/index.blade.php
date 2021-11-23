@@ -18,12 +18,12 @@
                         <div class="row">
                             <div class="col-md-6 p-0">
                                 <ul class="nav nav-tabs border-tab" id="top-tab" role="tablist">
-                                    <li><h4>Professions</h4></li>
+                                    <li><h4>Items</h4></li>
                                 </ul>
                             </div>
                             <div class="media-body text-end">
                                 <div class="d-inline-flex">
-                                    <a href="{{url('/admin/professions/create')}}" class="btn btn-primary" >
+                                    <a href="{{url('/admin/items/create')}}" class="btn btn-primary" >
                                             <i style="color:white;" data-feather="plus-square"></i>Add new
                                     </a>
                                 </div>
@@ -44,25 +44,20 @@
                                 <table class="display" id="basic-1">
                                     <thead>
                                     <tr>
-                                        <th>Professions</th>
-                                        <th>Plural</th>
-                                        <th>Professional Prefix</th>
-                                        <th>Student Prefix</th>
+                                        <th>Item</th>
                                         <th>Edit</th>
                                         <th>Delete</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($professions as $profession)
+                                    @foreach($items as $item)
                                         <tr>
-                                            <td>{{$profession->name}}</td>
-                                            <td>{{$profession->plural}}</td>
-                                            <td>{{$profession->professional_prefix}}</td>
-                                            <td>{{$profession->student_prefix}}</td>
+                                            <td>{{$item->name}}</td>
                                             <td>
-                                                <a href="{{url('/admin/professions/'.$profession->id.'/edit')}}">Edit</a>
+                                                <a href="{{url('/admin/items/'.$item->id.'/edit')}}">Edit</a>
                                             </td>
-                                            <td><a href="{{url('/admin/professions/'.$profession->id.'/delete')  }}">delete</a>
+                                            <td><a href="{{url('/admin/items/'.$item->id.'/delete')
+                                            }}">delete</a>
                                             </td>
                                         </tr>
                                     @endforeach
