@@ -30,6 +30,8 @@ Route::post('/admin/service_packages/{service}/store', 'ServicePackagesControlle
 Route::get('/admin/service_packages/{service}/edit', 'ServicePackagesController@edit');
 Route::patch('/admin/service_packages/{service}/update', 'ServicePackagesController@update');
 
+Route::post('/admin/service_package_items/{service_package_id}/store', 'ServicePackageItemsController@store');
+
 
 
 Route::get('/dashboard', function () {
